@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+
+  background-color: var(--Off-Black);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  background-color: var(--dark-Grey);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  width: 300px;
+  height: 600px;
+  text-align: center;
+}
+
+#profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+h1, p, a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+.head h1 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.head .address {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.head p {
+  font-size: 1.4rem;
+  margin: 3rem 0 2rem 0;
+}
+
+.card .links a {
+  display: grid;
+  margin: 2rem 0;
+  background-color: var(--grey);
+  border-radius: 1rem;
+  padding: 2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.links a:hover {
+  color: var(--Off-Black);
+  background-color: var(--green);
+  transform: scale(1.1);
+  transition: all 400ms ease-in-out;
+}
+
+@media (min-width:1440px) {
+  .card {
+    width: 400px;
+    height: 650px;
+  }
+
+  .card .links a {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
+
+  .card {
+    padding: 3rem 4rem;
+  }
+
+  .head p {
+    font-size: 1.6rem;
+  }
+
+  #profile {
+    width: 100px;
+    height: 100px;
+  }
+
+}
